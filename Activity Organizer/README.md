@@ -32,9 +32,31 @@ The program utilizes object oriented programming by creating both Students and A
     * The number of students enrolled in this activity.
 * `List<Student> roster`
     * Holds all of the students enrolled in the activity so they can be written to a file that contains an easily readable list of the roster for each activity.
-    
+
+### Driver Code
+#### Variables
+These variables were made final in hopes for other organizations or programs to use this code to save time themselves!  All one must do is change these variables and it should work.
+* `public static final int NUM_ACTIVITIES`
+    * The total number of activities offered + 1 (to avoid the use of 0 for those who are not comfortable using 0 as an activity number).
+    * In the code given, the organization would have 50 activities total (10 per day, 5 days).
+* `public static final int NUM_CLASSES`
+    * The total number of classes offered.
+* `public static final int NUM_STUDENTS`
+    * The total number of students IN EACH CLASS.  (see "Assumptions" section for further details)
+* `public static final String FILE_NAME`
+    * Holds the path for the file that will be written to store the rosters, capacities, and enrollment of each activity.
+#### Arrays
+* `static Activity[] activities`
+    * The array of activities that are offered for this week.
+* `static Student[] students`
+    * The array of students enrolled in this camp/program.
+
+## Points to Consider
+* Data security was paramount for this program, which is why each student is just represented by a class ID number, and a student ID number.
+* In order to ensure fairness, capacities for certain activities may be altered some weeks, and remain the same other weeks (see enroll() for more information).  The choice of students is based purely on a random number generator, and this program ensures every student will get his/her/their first choice at least once.
 ## Assumptions
-This program is built on the assumption that each class will have an equal amount of students.  This can easily be bypassed without making any substantial alterations to the code by changing `NUM_STUDENTS` to the highest capacity class offered, and entering 0s for the choices of each student that does not exist in the other classes.
+* This program is built on the assumption that each class will have an equal amount of students.  This can easily be bypassed without making any substantial alterations to the code by changing `NUM_STUDENTS` to the highest capacity class offered, and entering 0s for the choices of each student that does not exist in the other classes.
+* This program also assumes the inputted data will be correct, additional functionality may be added to support typos.
 
 This work cannot be submitted as one's own work regardless if any edits were made. 
 Copyright © 2019
