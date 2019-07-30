@@ -19,7 +19,7 @@ The program utilizes object oriented programming by creating both Students and A
     * A simple way to track if this student has been enrolled for a given day.
 * `public int choices[][]`
     * An array to hold three choices for each day of the week.
-    * i.e. choices[0][2] would be Monday (day 0), choice 3
+    * i.e. `choices[0][2]` would be Monday (day 0), choice 3
 * `public int finalActivities[]`
     * An array that holds the final activity numbers of this student.  This array is only full when this student has been fully enrolled in all its activities for the entire week.
     
