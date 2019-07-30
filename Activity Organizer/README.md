@@ -19,10 +19,18 @@ The program utilizes object oriented programming by creating both Students and A
     * A simple way to track if this student has been enrolled for a given day.
 * `public int choices[][]`
     * An array to hold three choices for each day of the week.
-    * i.e. `choices[0][2]` would be Monday (day 0), choice 3
+    * i.e. `choices[0][0]` would be Monday (day 0), choice 1 (starting at 1 rather than 0)
 * `public int finalActivities[]`
     * An array that holds the final activity numbers of this student.  This array is only full when this student has been fully enrolled in all its activities for the entire week.
-    
+#### Activity
+* `public int number`
+      * Represents this activities' ID number.  This is the number that will identify an activity to be included in the choices and finalActivities arrays in student.
+* `public int capacity`
+      * Simply the capacity of this activity.
+* `public int enrolled`
+      * The number of students enrolled in this activity.
+* `List<Student> roster`
+      * Holds all of the students enrolled in the activity so they can be written to a file that contains an easily readable list of the roster for each activity.
     
 ## Assumptions
 This program is built on the assumption that each class will have an equal amount of students.  This can easily be bypassed without making any substantial alterations to the code by changing `NUM_STUDENTS` to the highest capacity class offered, and entering 0s for the choices of each student that does not exist in the other classes.
