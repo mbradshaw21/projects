@@ -50,6 +50,22 @@ These variables were made final in hopes for other organizations or programs to 
     * The array of activities that are offered for this week.
 * `static Student[] students`
     * The array of students enrolled in this camp/program.
+#### Methods
+* `makeStudents()`
+    * Creates the students array based on the NUM_STUDENTS and NUM_CLASSES variables.
+* `printFinal()`
+    * Writes the final rosters of each activity to a file (path specified by the FILE_NAME variable).
+    * These rosters include the capacity, number of enrolled students, and the class and ID number of each student enrolled.
+* `enroll()`
+    * Enrolls each student into an activity based on the student's preferences specified by his/her/their `choices` array.
+    * Fairness is ensured by choosing the order of students being enrolled randomly each day.
+    * If all three choices of a student are full for a given day, a random activity will be chosen for him/her/them.
+    * If a student has not gotten their first choice at all the entire week and it is now Friday, he/she/they will automatically be granted his/her/their first choice, regardless if the capacity has been reached.
+* `main(String args[])`
+    * Creates the activities array for the entire week by asking the user to enter the capacity for each activity.
+    * After the activities have been created, thet user must enter the choices of each student for the day.  This process is done for the entire week.
+       * i.e. All the students' choices are entered for Monday, then Tuesday, then Wednesday, etc.
+       * NOT student #1 choices are entered for the entire week, then student #2 choices are entered for the entire week, etc.
 
 ## Points to Consider
 * Data security was paramount for this program, which is why each student is just represented by a class ID number, and a student ID number.
