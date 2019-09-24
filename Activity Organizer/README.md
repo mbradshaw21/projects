@@ -74,5 +74,5 @@ These variables were made final in hopes for other organizations or programs to 
 * This program is built on the assumption that each class will have an equal amount of students.  This can easily be bypassed without making any substantial alterations to the code by changing `NUM_STUDENTS` to the highest capacity class offered, and entering 0s for the choices of each student that does not exist in the other classes.
 * This program also assumes the inputted data will be correct, additional functionality may be added to support typos.
 
-This work cannot be submitted as one's own work regardless if any edits were made. 
+This work cannot be submitted as one's own work regardless if any edits were made.  
 Copyright © 2019
